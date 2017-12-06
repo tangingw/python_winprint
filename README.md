@@ -109,7 +109,7 @@ _print_client.py_ mimics the famous unix printing command, _lpr_, hence shares s
     SHELL>~/python_winprint/print_client.py foo_bar.pdf 200-214
     ```
 
-### To Do[Puncuation: :]
+### To Do
 
 - Add authentication system
 - Add a database system to capture the print records. The print records are currently stored in Redis Server
