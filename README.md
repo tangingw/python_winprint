@@ -24,7 +24,8 @@ There are few steps to set up both server and client (Note: Please follow the fo
         this will install the necessary library and setup a redis server on your computer
 
     - **Configure Redis server**
-        Change the following line 
+        - Change the following line in /etc/redis/redis.conf
+        
         ```conf
         bind 127.0.0.1
         ```
