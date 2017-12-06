@@ -1,0 +1,10 @@
+{
+    "SERVER": {
+        "PRINT_PATH": "C:\\Users\\<YOUR WIN_ID>\\test_upload\\"
+    },
+    "CLIENT":{
+        "PRINT_PATH": "/var/print/"
+    },
+    "UPLOAD_URL": "http://<YOUR FLASK APP IP>:5000/upload",
+    "REDIS_SERVER": "<YOUR REDIS IP>"
+}

@@ -1,0 +1,33 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters":{
+        "simple":{
+            "format": "%(asctime)s - %(levelname)s: %(message)s"
+        }
+    },
+    "handlers": {
+        "console":{
+            "class": "logging.StreamHandler",
+            "level": "INFO",
+            "formatter": "simple",
+            "stream": "ext://sys.stdout"
+        },
+        "print_file_handler":{
+            "class": "logging.handlers.RotatingFileHandler",
+            "level": "INFO",
+            "formatter": "simple",
+            "filename": "print_status.log",
+            "maxBytes": 1045876,
+            "backupCount": 5,
+            "encoding": "utf8"
+        }
+    },
+    "loggers":{
+        "win_print": {
+            "level": "INFO",
+            "handlers": ["console", "print_file_handler"],
+            "propagate": "no"
+        }
+    }
+}
