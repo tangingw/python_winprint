@@ -39,7 +39,6 @@ There are few steps to set up both server and client (Note: Please follow the fo
     - **Edit _~/python_winprint/config/config.json_**
 
         1. Change the _CLIENT -> PRINT_PATH_ to _/home/<YOUR_USERNAME>/print_dir/_
-
         2. Change the _REDIS_SERVER_ to your host IP address
 
         ```json
@@ -57,13 +56,13 @@ There are few steps to set up both server and client (Note: Please follow the fo
 
 - Server (Windows 8.x, Windows 10, Windows Server 2012 R2)
     - **Prepare a Windows Machine**
-    - You can either use a physical Windows machine or virtual machine (both laptop and desktop and make sure you have a legal copy of Windows). The author uses Windows Server 2012 R2, virtual machine hosted in KVM.  
+        - You can either use a physical Windows machine or virtual machine (both laptop and desktop and make sure you have a legal copy of Windows). The author uses Windows Server 2012 R2, virtual machine hosted in KVM.  
 
     - **Install your printer driver on Windows Machine**
-    - Without this, the print_server.py will not work. Make sure you do a test print after you have installed your printer driver so that it will not cause any issue to printer_server.py
+        - Without this, the print_server.py will not work. Make sure you do a test print after you have installed your printer driver so that it will not cause any issue to printer_server.py
 
     - **Install [python 3.x](https://www.python.org/downloads/windows/) on your Windows machine**
-    - Currently print_server.py is coded in python 3.x since the author wants to learn python 3.x.
+        - Currently print_server.py is coded in python 3.x since the author wants to learn python 3.x.
 
     - **Install latest copy of [Adobe Reader](https://get.adobe.com/reader/otherversions/)**
     - **git clone this repo**
@@ -87,7 +86,7 @@ There are few steps to set up both server and client (Note: Please follow the fo
             "REDIS_SERVER": "<YOUR REDIS IP>"
         }
         ```
-    - Start your application in [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-5.1)
+    - **Start your application in [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-5.1)**
         ```powershell
         POWER_SHELL> cd .\python_winprint\
         POWER_SHELL> python print_server.py
@@ -110,7 +109,7 @@ _print_client.py_ mimics the famous unix printing command, _lpr_, hence shares s
     SHELL>~/python_winprint/print_client.py foo_bar.pdf 200-214
     ```
 
-### To Do:
+### To Do[Puncuation: :]
 
 - Add authentication system
 - Add a database system to capture the print records. The print records are currently stored in Redis Server
